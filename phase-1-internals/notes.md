@@ -138,6 +138,31 @@ nano file.md                  # open file in terminal editor
 ## Still to cover in Phase 1
 
 - [ ] `git log` — reading history in detail
+
+git log --oneline
+# a3f2c1d phase-1: document internals
+# 7b2e4f1 init: set up learning phase folder structure
+# Short hash + message only. Your daily driver.
+
+git log --oneline --graph
+# Adds a visual branch tree on the left side.
+# Not useful yet, but essential once we start branching in Phase 2.
+
+git log --oneline --all
+# Shows commits on ALL branches, not just the current one.
+# Also essential in Phase 2.
+
+git log -p
+# Shows the full diff introduced by each commit.
+# Powerful but verbose — use it when investigating a specific change.
+
+git log --oneline -5
+# Shows only the last 5 commits. Replace 5 with any number.
+
+git log --oneline -- phase-1-internals/notes.md
+# Shows only commits that touched a specific file.
+# Very useful when debugging "who changed this and when."
+
 - [ ] `git restore` and `git checkout` — undoing changes in each zone
 - [ ] `.gitignore` — telling Git which files to never track
 - [ ] `git show` — inspecting a specific commit in detail
