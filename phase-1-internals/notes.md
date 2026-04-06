@@ -404,3 +404,4 @@ nano file.md                  # open file in terminal editor
 - [x] .gitignore — patterns and the already-tracked file rule
 
 main branch note
+another main note
