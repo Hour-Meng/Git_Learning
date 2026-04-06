@@ -403,3 +403,4 @@ nano file.md                  # open file in terminal editor
 - [x] git restore — undoing changes, the difference between staged and working tree
 - [x] .gitignore — patterns and the already-tracked file rule
 
+main branch note
